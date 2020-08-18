@@ -1,36 +1,30 @@
 该软件用于医学图像的分割标注
 只是一个qt入门的demo，功能并不完全，算法也不优
 
-## 界面
-[img]../ui.jpg
-
-## 测试文件下载
-[google driver](https://drive.google.com/file/d/1kc2JBTVGw-p6TtxLaqPs5KmEiXVkOQLC/view?usp=sharing)
-
-## 文件操作：
+文件操作：
 - open：用于打开.nii.gz图像
 - save：将编辑好的标签保存
 - help：显示该帮助信息
 - quit：退出软件
 
-## 编辑操作：
+编辑操作：
 - window：进入调节窗宽窗位模式，在图像上按住鼠标并上下左右滑动可调节窗宽窗位
 - default window：使用默认的窗宽窗位，默认wc=400,ww=80
 
-## 选择ROI：
+选择ROI：
 - 2d roi：在当前的slice上选择2d的矩形区域进行标注
 - 3d roi：在xy平面上选取矩形区域，结合begin和end生成3d的ROI
 - begin：将当前slice作为3d ROI的起始切片
 - end：将当前slice作为3d ROI的终止切片
 
-## 分割算法：
+分割算法：
 - tree：在当前ROI上计算maxtree
 - select：在当前ROI中选择一个初始点，该点在maxtree中对应一个节点，从该节点向上走到根节点的过程中，包含的区域逐渐增多，总面积逐渐增大，总面积随节点数量的变化曲线绘制在界面下方，在该曲线上点击鼠标，即可选择区域扩张的终点，即产生一个分割
 - undo：舍弃当前分割区域（红色）
 - write：将当前分割区域（红色）写入分割标签（橘色）
 - show/hide：显示/不显示分割结果
 
-## 分割流程：
+分割流程：
 - 鼠标在原图上移动可显示当前像素的xyz坐标和Hu值
 - 在原图上选择ROI后，点tree生成该ROI的maxtree
 - 点select，鼠标在ROI内选择初始点，从初始点对应节点走到根节点的总面积变化曲线在下方显示
@@ -40,7 +34,7 @@
 - 鼠标右键可删除最终分割标签中的连通域（橘色）
 - 点save保存分割标签
 
-## TODO：
+TODO：
 - 默认窗宽窗位可从图像中读取
 - 窗口大小和布局写死了，需要优化
 - 擦除连通域太慢了
