@@ -2,7 +2,7 @@
 只是一个qt入门的demo，功能并不完全，算法也不优
 
 ## 界面
-[img]../ui.jpg
+![img](ui.jpg)
 
 ## 测试文件下载
 [google driver](https://drive.google.com/file/d/1kc2JBTVGw-p6TtxLaqPs5KmEiXVkOQLC/view?usp=sharing)
