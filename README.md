@@ -1,10 +1,10 @@
-该软件用于医学图像的分割标注
-只是一个qt入门的demo，功能并不完全，算法也不优
+该软件用于医学图像的分割标注，算法基于maxtree，界面基于Qt5。
+只是一个Qt入门的demo，功能并不完全，算法也不优。
 
 ## 界面
 ![img](ui.jpg)
 
-## 测试文件下载
+## 测试图像下载
 [google driver](https://drive.google.com/file/d/1kc2JBTVGw-p6TtxLaqPs5KmEiXVkOQLC/view?usp=sharing)
 
 ## 文件操作：
